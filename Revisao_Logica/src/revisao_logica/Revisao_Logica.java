@@ -15,8 +15,7 @@ public class Revisao_Logica {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Comparable k = MaiorNumero.maiorNumero(2,3,50,4);
-        int j = MaiorNumero.maiorNumero(2, 3);
+        String s = NumeroDecrescente.numeroDecrescente(30).toString();
     }
     
 }

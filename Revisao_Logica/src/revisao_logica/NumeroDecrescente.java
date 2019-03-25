@@ -5,6 +5,7 @@
  */
 package revisao_logica;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -13,15 +14,12 @@ import java.util.List;
  */
 public class NumeroDecrescente {
     
-    public static List<Number> numeroDecrescente(Comparable n){
-        
-        for (int i = 0; n.compareTo(i); i++) {
-            Object object = arr[i];
-            
+    public static List<Integer> numeroDecrescente(int a){
+        List<Integer> result = new ArrayList();
+        for(int i = 0 ; i <=a ; ++i){
+            result.add(a-i);
         }
-        
-        
-        
+        return result;
     }
     
     

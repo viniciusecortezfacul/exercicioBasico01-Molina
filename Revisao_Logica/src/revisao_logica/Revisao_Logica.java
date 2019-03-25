@@ -15,7 +15,7 @@ public class Revisao_Logica {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        System.out.println(MaiorNumero.maiorNumero(2,3,50,4));
     }
     
 }

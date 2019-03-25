@@ -18,15 +18,32 @@ public class MaiorNumero {
      */
     public static Comparable maiorNumero(Comparable... n){
         Comparable result = null;
-        try{
-            for (int i = 0; i < n.length-1; i++) {
-               result = (n[i].compareTo(n[i+1]) > 0) ? n[i] : n[i+1];
+        
+        for (int i = 0; i < n.length-1; i++) {
+            result = (n[i].compareTo(n[i+1]) > 0) ? n[i] : n[i+1];     
+        }
+        if(result == null){
+            return new Comparable(){
+                public int compareTo(Object o){
+                    return 0;
+                }
                 
-            }
-        }catch(NullPointerException ex){
-            throw new NullPointerException();
-        }finally{
+                public String toString(){
+                    return "null";
+                }
+            };
+        }else{
             return result;
         }
     }
+    
+    public static int maiorNumero(int a, int b){
+        return (a > b) ? a : b;
+    }
+    
+    
+    
+    
+         
 }
+ 

@@ -15,7 +15,7 @@ public class Revisao_Logica {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println(MaiorNumero.maiorNumero(2,3,50,4));
+        Comparable k = MaiorNumero.maiorNumero(2,3.5,50,4));
     }
     
 }
